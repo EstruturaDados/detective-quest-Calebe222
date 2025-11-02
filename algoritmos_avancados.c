@@ -125,7 +125,7 @@ void explorarSalas(Sala* raiz) {
 }
 
 // Função para liberar a memória da árvore
-void liberarMAnsao(Sala* raiz) {
+void liberarArvore(Sala* raiz) {
     if (raiz == NULL) {
         return;
     }
@@ -143,7 +143,7 @@ int main() {
     explorarSalas(mansao);
 
     // liberar a memória alocada
-    LiberarArvore(mansao);
+    liberarArvore(mansao);
 
     return 0;
 }
